@@ -1,7 +1,12 @@
 ## Extract Lane Changes
-We extend the original highD Matlab tools to further extract the lane changes with additional features not found in the `.csv` files. To extract the lane changes run `/bin/collectLaneChanges.m`. The extracted lane changes can be prepared for machine learning applications using the `/bin/saveLaneChanges.m` file.
+We extend the original highD Matlab tools to further extract the lane changes with additional features not found in the `.csv` files. To extract the lane changes run `bin/collectLaneChanges.m`. The extracted lane changes can be prepared for machine learning applications using the `bin/saveLaneChanges.m` file.
 
 The remaining tools provided by the highD team have been left untouched.
+
+### How to extract lane changes
+1) Copy the csv files into the `/data` directory.
+2) Run `bin/collectLaneChanges.m` and `bin/collectLocations.m`.
+3) (Optional) Update `bin/saveLaneChanges.m` with the extracted lane changes file names and run it.
 
 ## highD Matlab tools
 These tools allow you to read-in the highD csv files and visualize them in an interactive 
